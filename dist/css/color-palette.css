@@ -114,15 +114,26 @@ a:visited {
 .no-text * {
   font-size: 0;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
+
+  main {
+    padding: 0;
+  }
+  .box {
+    margin: 0;
+  }
   .box-header {
     display: block;
   }
+  .box-header h1 {
+    font-size: 1.5rem;
+  }
   .box-header small {
+    font-size: 1rem;
     margin: 8px 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 426px; max-width: 600px) {
   main {
     padding: .25rem;
   }

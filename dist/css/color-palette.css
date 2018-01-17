@@ -18,13 +18,28 @@ a:visited {
   color: inherit;
   text-decoration: underline;
 }
-.box-header > h1 {
+.box-header {
+  display: grid;
+  grid-template-areas: 'title switch'
+                       'small switch';
+  grid-template-columns: 1fr 120px;
+  align-items: center;
+}
+.box-header > title {
+  grid-area: title;
+}
+.box-header h1 {
   font-weight: 400;
 }
-.box-header > small {
+.box-header small {
+  grid-area: small;
   display: block;
-  margin-top: 8px;
+  margin: 8px 0 0;
   opacity: .6;
+}
+.text-switch {
+  grid-area: switch;
+
 }
 
 .box {
@@ -96,10 +111,25 @@ a:visited {
   text-align: center;
 }
 
+.no-text * {
+  font-size: 0;
+}
+@media screen and (max-width: 420px) {
+  .box-header {
+    display: block;
+  }
+  .box-header small {
+    margin: 8px 0;
+  }
+}
 @media screen and (max-width: 600px) {
+  main {
+    padding: .25rem;
+  }
   .box {
     margin: .5rem;
   }
+
   .palette {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   }

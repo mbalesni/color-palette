@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
     <link rel="stylesheet" href="dist/css/color-palette.css">
     <link rel="stylesheet" href="dist/css/iziToast.min.css">
+    <link rel="stylesheet" href="dist/css/switch.css">
     <link rel="icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -13,11 +14,24 @@
   <main>
     <div class="box">
       <div class="box-header">
-        <h1>Color palette</h1>
+        <div class="title">
+          <h1>Color palette</h1>
+        </div>
+
         <small>Click a color to copy it to clipboard</small>
+
+        <div class="text-switch">
+          <input type="checkbox" id="text-switch" name="set-name" class="switch-input">
+          <label for="text-switch" class="switch-label">HEX <span class="toggle--on">On</span><span class="toggle--off">Off</span></label>
+        </div>
+
+
+
+
       </div>
+
       <div class="box-body">
-        <div class="palette">
+        <div class="palette no-text">
 
           <div class="col">
             <div data-clipboard-text="#E15240" class="tile big" style="background-color: #E15240"><div class="sized white">RED</div></div>
@@ -376,11 +390,8 @@
       </div>
       <div class="box-footer">
         <small>Brought by <a href="https://github.com/nikita-balesny" target="_blank">Mykyta Baliesnyi</a></small>
-
       </div>
     </div>
-
-
   </main>
 
 

@@ -51,12 +51,11 @@
   transform: translate(80%, -50%);
 }
 .switch-input:checked + .switch-label .toggle-text {
-  /* font-weight: 600; */
   opacity: 1;
 
 }
 
-@media screen and (max-width: 425px) {
+@media (pointer: coarse) {
   .switch-input:checked + .switch-label:after {
     -ms-transform: translate(90%, -50%);
     -webkit-transform: translate(90%, -50%);

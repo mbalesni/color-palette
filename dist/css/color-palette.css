@@ -22,10 +22,16 @@ a:visited {
   display: grid;
   grid-template-areas: 'title switch'
                        'small switch';
-  grid-template-columns: 1fr 120px;
+  grid-template-columns: 1fr 150px;
   align-items: center;
+  justify-content: space-between;
 }
-.box-header > title {
+@media (pointer: coarse) {
+  .box-header {
+
+  }
+}
+.box-header .title {
   grid-area: title;
 }
 .box-header h1 {
@@ -91,15 +97,25 @@ a:visited {
 .black {
   color: rgba(0, 0, 0, .87);
 }
-.tile:hover {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+.tile {
+  transition: 0s;
   cursor: pointer;
-  transform: scale(1.02);
+
 }
+@media (hover: hover) {
+  .tile:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transform: scale(1.02);
+  }
+  .tile {
+    transition: 0.2s;
+  }
+
+}
+
 .tile:active {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
   transform: scale(1.04);
-
 }
 
 .box-footer {

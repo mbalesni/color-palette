@@ -80,7 +80,7 @@ a:visited {
   font-weight: 500;
   height: 3.9375rem;
   text-transform: uppercase;
-  transition: 0.3s;
+  transition: 0s;
 }
 
 .sized.small {
@@ -105,13 +105,14 @@ a:visited {
     transform: scale(1.02);
   }
   .tile {
-    transition: 0.2s;
+    /* transition: 0.2s; */
   }
 }
 
 .tile:active {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
   transform: scale(1.04);
+  transition: 0.2s;
 }
 
 .box-footer {

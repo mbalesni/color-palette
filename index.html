@@ -26,6 +26,16 @@
       </div>
 
       <div class="box-body">
+        <div id="fb-root"></div>
+        <script>
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div class="palette no-text">
 
           <div class="col">
@@ -386,7 +396,9 @@
       <div class="box-footer">
         <small>Brought by <a href="https://github.com/nikita-balesny" target="_blank">Mykyta Baliesnyi</a></small>
       </div>
-    </div>
+    </
+    div>
+    <div class="fb-comments" data-href="https://nikita-balesny.github.io/color-palette/" data-width="100%" data-numposts="5"></div>
   </main>
 
 

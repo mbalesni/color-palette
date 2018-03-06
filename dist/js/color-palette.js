@@ -17,7 +17,7 @@ function instColorSaving () {
       messageColor: clr,
       backgroundColor: e.text,
       position: 'topCenter',
-      progressBar: true,
+      progressBar: false,
       animateInside: true,
       close: true,
       timeout: 2500

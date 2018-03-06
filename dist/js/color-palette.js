@@ -20,7 +20,7 @@ function instColorSaving () {
       progressBar: true,
       animateInside: true,
       close: true,
-      timeout: 5000
+      timeout: 2500
     })
   })
 }
